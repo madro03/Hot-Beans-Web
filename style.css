@@ -14,7 +14,9 @@ nav{
   justify-content: space-between;
   padding: 0 50px 0 100px;
   flex-wrap: wrap;
-}
+  position: relative;
+  z-index: 100;
+} 
 nav .logo{
   padding: 0;
   margin: 30px;
