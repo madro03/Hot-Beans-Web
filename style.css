@@ -1,0 +1,635 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+  font-weight: bold;
+} 
+nav{
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  padding: 0;
+  margin: 30px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+.logopic {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 30px;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: arial;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover{
+  color: orange;
+}
+nav .menu-btn i{
+  color: black;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media screen and (max-width: 1024px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+
+  nav .logo {
+  padding-left: 40px;
+  margin: 30px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: orange;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s;
+    color: white;
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+
+  nav ul li a:hover{
+    background: none;
+    color: black;
+  }
+}
+  
+}
+.box {
+width: 100%;
+height: 700px;
+flex-wrap: nowrap;
+}
+
+.box-img {
+height: 740px;
+background-size: cover;
+opacity: 0.8;
+}
+
+.box-1 {
+  background-image: url('CodingImg.jpg')
+}
+
+.box-img h2{
+color: white;
+padding: 250px;
+font-size: 70px;
+text-align: center;
+text-shadow: 2px 2px 4px black;
+}
+
+.box2 {
+width: 100%;
+height: 130px;
+flex-wrap: nowrap;
+}
+
+.box2 hr {
+align-items: center;
+margin-right: 300px;
+margin-left: 300px;
+margin-top: 10px;
+background-color: grey;
+}
+
+.box-img2 {
+height: 100px;
+background-size: cover;
+opacity: 0.8;
+}
+
+.box-img2 h2{
+color: black;
+font-size: 40px;
+text-align: center;
+margin: 70px;
+}
+
+.box3 {
+width: 100%;
+height: 400px;
+flex-wrap: nowrap;
+}
+
+.box-img3 {
+height: 100px;
+background-size: cover;
+opacity: 0.8;
+}
+
+
+.box-img3 h2 {
+color: black;
+font-size: 40px;
+text-align: center;
+margin-top: 0;
+}
+
+.box-img3 hr {
+align-items: center;
+margin-right: 800px;
+margin-left: 800px;
+margin-top: 10px;
+background-color: grey;
+}
+
+.box-img3 p {
+margin-top: 30px;
+margin-right: 500px;
+margin-left: 500px;
+font-size: 30px;
+font-weight: normal;
+line-height: 1.2;
+text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+
+.box {
+width: 520px;
+height: 300px;
+flex-wrap: nowrap;
+}
+
+.box-img {
+height: 300px;
+background-size: cover;
+opacity: 0.8;
+}
+
+.box-1 {
+  background-image: url('CodingImg.jpg')
+}
+
+.box-img h2{
+  font-size: 40px;
+  margin-top: 0;
+  padding: 95px;
+}
+.box2 {
+width: 100%;
+height: 90px;
+flex-wrap: nowrap;
+}
+
+.box2 hr {
+align-items: center;
+margin-right: 70px;
+margin-left: 70px;
+margin-top: 30px;
+background-color: grey;
+}
+
+.box-img2 {
+height: 30px;
+background-size: cover;
+opacity: 0.8;
+}
+
+.box-img2 h2{
+color: black;
+font-size: 20px;
+text-align: center;
+margin: 10px;
+}
+
+.box3 {
+width: 100%;
+height: 400px;
+flex-wrap: nowrap;
+}
+
+.box-img3 {
+height: 100px;
+background-size: cover;
+opacity: 0.8;
+}
+
+
+.box-img3 h2 {
+color: black;
+font-size: 20px;
+text-align: center;
+margin: 0;
+}
+
+.box-img3 hr {
+align-items: center;
+margin-right: 190px;
+margin-left: 190px;
+margin-bottom: 10px;
+background-color: grey;
+}
+
+.box-img3 p {
+margin: 0;
+font-size: 20px;
+font-weight: normal;
+line-height: 1.2;
+text-align: center;
+}
+    }
+/*MEET THE TEAM*/
+
+.developers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.dev-card{
+  background: #FBBF77;
+  width: 350px;
+  height: 712px;
+  margin: 30px;
+  margin-top: 3%;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  display: block;
+}
+
+.deve-card-image {
+  height: 320px;
+  margin-bottom: 30px;
+  margin: 30px;
+  background-size: cover;
+  margin-right: 10px;
+  margin-left: 10px; 
+}
+
+.dev-card h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: white; 
+}
+.dev-1 {
+  background-image: url('Employee 1.jpg')
+}
+
+.dev-2 {
+  background-image: url('Employee 2.jpg')
+}
+
+.dev-3 {
+  background-image: url('Employee 3.jpg')
+}
+
+.dev-4 {
+  background-image: url('Employee 4.jpg')
+}
+
+.dev-card p {
+  height: 210px;
+  padding: 30px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+font-weight: normal;
+}
+.dev-card:hover {
+background-color: orange;
+ cursor: pointer;
+ transition: all 0.5s ease;
+}
+
+/*JOB REQUIREMENTS PAGE*/
+.jobs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.section {
+  background:  #FBBF77;
+  width: 600px;
+  height: 450px;
+  margin: 70px;
+  margin-top: 3%;
+  border: 1px solid orange;
+  display: block;  
+  border-radius: 15px;
+}
+
+.section h2{
+  background-color: orange;
+  padding: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: white;
+  outline: black;
+  text-align: center;
+  border-radius: 15px 15px 0 0;
+}
+
+.section ul li{
+font-size: 20px;
+ color: black;
+  margin: 30px;
+  line-height: 1.8;
+  font-weight: normal;
+}
+
+.section p {
+  font-size: 20px;
+  margin: 20px;
+  line-height: 1.8;
+  font-weight: normal;
+  text-align: center;
+}
+
+.section a {
+  background-color: #FF8C00;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 15px;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  width: 200px;
+}
+
+.section a:hover {
+ background-color: orange;
+ cursor: pointer;
+ transform: scale(1.04);  
+ transition: all 0.5s ease;
+}
+
+/*COURSES PAGE*/
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #FBBF77;
+  width: 350px;
+  height: 750px;
+  margin: 30px;
+  margin-top: 3%;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  display: block;
+}
+
+.card-image {
+  height: 320px;
+  margin-bottom: 30px;
+  margin: 30px;
+  background-size: cover;
+  margin-right: 10px;
+  margin-left: 10px; 
+}
+
+.card h2{
+  margin-bottom: 30px;
+  text-align: center;
+  color: white;
+}
+.car-1 {
+  background-image: url('W3 Schools Logo.jpg')
+}
+
+.car-2 {
+  background-image: url('edX logo.png')
+}
+
+.car-3 {
+  background-image: url('Khan Academy Logo.jpg')
+}
+
+.car-4 {
+  background-image: url('Codecademy Logo.png')
+}
+
+.card p {
+  height: 230px;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: normal;
+}
+.card a{
+  background-color: #FF8C00;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 15px;
+  display: block;
+  text-align: center;
+  margin: 15px 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  width: 200px;
+}
+
+.card:hover {
+ background-color: orange;
+ cursor: pointer;
+ transform: scale(1.04);  
+ transition: all 0.5s ease;
+}
+
+/*APPLICATION FORM*/
+
+.case {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  border-raidus: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 600px;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.form-control{
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.form-control label {
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.form-control input{
+  border: 2px solid #616161;
+  border-radius: 5px;
+  display: block;
+  width: 300px;
+  padding: 10px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.form-control.success input {
+  border-color: #00cc00;
+}
+
+.form-control.error input {
+  border-color: #ff6b6b;
+}
+
+.form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+}
+.form-control.success i.fa-check-circle{
+visibility: visible;
+  color: #00cc00;
+}
+
+.form-control.error i.fa-exclamation-circle{
+visibility: visible;
+  color:  #ff6b6b;
+}
+
+.form-control small{
+  visibility: hidden;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color:  #ff6b6b;
+}
+.form button {
+  background-color: orange;
+  color: white;
+  border: 2px solid orange;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  cursor: pointer;
+ transition: all 0.5s ease;
+}
+
+.form button:hover {
+  transform: scale(1.04);    
+}
+
+
+/* TITLES OF EACH PAGE*/
+.BorderForMTTT {
+  background-color: white;
+  height: 500px;
+}
+
+.MTTT {
+  background-color: orange;
+  color: white;
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+  font-size: 35px;
+}
+
+.JRT {
+  background-color: orange;
+  color: white;
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+  font-size: 35px;
+}
+
+.CT {
+  background-color: orange;
+  color: white;
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+  font-size: 35px;
+}
+
+.AFT {
+  background-color: orange;
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  padding: 5px 0px 5px 0px;
+}
